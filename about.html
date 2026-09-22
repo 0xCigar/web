@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — cigar.sh</title>
+<meta name="description" content="Who&#x27;s behind 0xCigar, what this site covers, and a link to my formal CV at ayushwahane.com.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cigar.sh/about.html">
+<meta property="og:title" content="About — cigar.sh">
+<meta property="og:description" content="Who&#x27;s behind 0xCigar, what this site covers, and a link to my formal CV at ayushwahane.com.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cigar.sh/about.html">
+<meta property="og:image" content="https://cigar.sh/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="About — cigar.sh">
+<meta name="twitter:description" content="Who&#x27;s behind 0xCigar, what this site covers, and a link to my formal CV at ayushwahane.com.">
+<meta name="twitter:image" content="https://cigar.sh/assets/og-image.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="about">
+
+<div class="grain"></div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-row">
+    <a href="index.html" class="tb-mark">cigar<span class="dim">.sh</span></a>
+    <nav class="tb-nav" id="tbNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" data-page="home"><span class="op">~</span> home</a></li>
+        <li><a href="writeups.html" data-page="writeups"><span class="op">cd</span> writeups</a></li>
+        <li><a href="research.html" data-page="research"><span class="op">cd</span> research</a></li>
+        <li><a href="notes.html" data-page="notes"><span class="op">cd</span> notes</a></li>
+        <li><a href="projects.html" data-page="projects"><span class="op">cd</span> projects</a></li>
+        <li><a href="about.html" data-page="about"><span class="op">cd</span> about</a></li>
+        <li><a href="contact.html" data-page="contact"><span class="op">cd</span> contact</a></li>
+      </ul>
+    </nav>
+    <div class="tb-right">
+      <div class="tb-search" data-search-widget>
+        <span class="glyph">grep</span>
+        <input type="text" id="topSearch" placeholder="search site…" autocomplete="off">
+        <div class="tb-search-panel" id="topSearchPanel">
+          <div class="tb-search-count" id="topSearchCount"></div>
+          <div class="ss-results" id="topSearchResults"></div>
+          <div class="no-results" id="topSearchNoResults">Nothing matches that search.</div>
+        </div>
+      </div>
+      <div class="tb-uptime"><span class="dot"></span><span class="uptime-target">session uptime — 00:00:00</span></div>
+      <button class="tb-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-icon"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+  <div class="tb-overlay" id="tbOverlay">
+    <nav class="tb-overlay-nav" aria-label="Primary, expanded">
+      <ul>
+        <li><a href="index.html" data-page="home"><span class="op">~</span> home</a></li>
+        <li><a href="writeups.html" data-page="writeups"><span class="op">cd</span> writeups</a></li>
+        <li><a href="research.html" data-page="research"><span class="op">cd</span> research</a></li>
+        <li><a href="notes.html" data-page="notes"><span class="op">cd</span> notes</a></li>
+        <li><a href="projects.html" data-page="projects"><span class="op">cd</span> projects</a></li>
+        <li><a href="about.html" data-page="about"><span class="op">cd</span> about</a></li>
+        <li><a href="contact.html" data-page="contact"><span class="op">cd</span> contact</a></li>
+      </ul>
+    </nav>
+    <div class="tb-search" data-search-widget>
+        <span class="glyph">grep</span>
+        <input type="text" id="topSearchOverlay" placeholder="search site…" autocomplete="off">
+        <div class="tb-search-panel" id="topSearchOverlayPanel">
+          <div class="tb-search-count" id="topSearchOverlayCount"></div>
+          <div class="ss-results" id="topSearchOverlayResults"></div>
+          <div class="no-results" id="topSearchOverlayNoResults">Nothing matches that search.</div>
+        </div>
+      </div>
+    <div class="tb-overlay-socials">
+      <a href="xmpp.html"><span class="glyph">xmpp</span> 0x@cigar.sh</a>
+    </div>
+    <div class="tb-overlay-uptime"><span class="dot"></span><span class="uptime-target">session uptime — 00:00:00</span></div>
+  </div>
+</header>
+
+<main class="main">
+<section id="about">
+  <a class="back-link" href="index.html">← home</a>
+  <div class="eyebrow">$ whoami</div>
+  <h2 class="section-title">About</h2>
+
+  <div class="about-body">
+    <p>0xCigar is the handle I write under here. This site is where I put down red team and blue team engagement notes, CTF solves, bug bounty research, and the study notes from whatever certification I'm working through at the time — mostly so I have an accurate record to look back on, and so anyone evaluating my work can see it directly rather than taking my word for it.</p>
+
+    <p>I split my time roughly evenly between offense and defense: breaking things during authorized assessments, and building the detection logic that would have caught me doing it. Writeups here are grouped that way on purpose — red team and blue team aren't opposing camps to me, they're two ends of the same problem.</p>
+
+    <p>Writeups exist because <strong>learning in public builds a track record that a resume can't</strong> — anyone can claim a skill, but a documented methodology, a real detection rule, or a tool that's seen actual use says more than a line item.</p>
+
+    <div class="cv-callout">
+      <p>For my formal CV, certifications, and professional contact details, see <a href="https://ayushwahane.com" target="_blank" rel="noopener">ayushwahane.com</a>.</p>
+    </div>
+
+    <h3 style="font-family:var(--serif); font-size:20px; color:var(--ink); margin-bottom:16px;">Current focus</h3>
+    <ul class="about-list">
+      <li><strong>Certifications in progress:</strong> CCNA, Security+, and CPTS — notes for each are on the <a href="notes.html">Notes</a> page as I go, not after the fact.</li>
+      <li><strong>Active on:</strong> TryHackMe, HackTheBox, PortSwigger's Web Security Academy, and Proving Grounds.</li>
+    </ul>
+
+    <h3 style="font-family:var(--serif); font-size:20px; color:var(--ink); margin-bottom:16px;">How this site is organized</h3>
+    <ul class="about-list">
+      <li><strong><a href="writeups.html">Writeups</a></strong> — engagement notes and CTF solves, grouped red team / blue team.</li>
+      <li><strong><a href="research.html">Research &amp; OSS</a></strong> — disclosures, maintained tools, and upstream contributions.</li>
+      <li><strong><a href="notes.html">Notes</a></strong> — certification study notes, grouped by cert.</li>
+      <li><strong><a href="projects.html">Projects</a></strong> — tools built out of engagement or research necessity.</li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<script src="assets/search-data.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>

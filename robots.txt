@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Disallow: /admin/
+# Disallow: /draft/
+
+Sitemap: https://cigar.sh/sitemap.xml

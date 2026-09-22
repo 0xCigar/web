@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Note title goes here — cigar.sh</title>
+<meta name="description" content="Template for a new study note entry — duplicate and replace before publishing.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cigar.sh/note-template.html">
+<meta property="og:title" content="Note title goes here — cigar.sh">
+<meta property="og:description" content="Template for a new study note entry — duplicate and replace before publishing.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cigar.sh/note-template.html">
+<meta property="og:image" content="https://cigar.sh/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Note title goes here — cigar.sh">
+<meta name="twitter:description" content="Template for a new study note entry — duplicate and replace before publishing.">
+<meta name="twitter:image" content="https://cigar.sh/assets/og-image.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body data-page="notes">
+
+<div class="grain"></div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-row">
+    <a href="index.html" class="tb-mark">cigar<span class="dim">.sh</span></a>
+    <nav class="tb-nav" id="tbNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" data-page="home"><span class="op">~</span> home</a></li>
+        <li><a href="writeups.html" data-page="writeups"><span class="op">cd</span> writeups</a></li>
+        <li><a href="research.html" data-page="research"><span class="op">cd</span> research</a></li>
+        <li><a href="notes.html" data-page="notes"><span class="op">cd</span> notes</a></li>
+        <li><a href="projects.html" data-page="projects"><span class="op">cd</span> projects</a></li>
+        <li><a href="about.html" data-page="about"><span class="op">cd</span> about</a></li>
+        <li><a href="contact.html" data-page="contact"><span class="op">cd</span> contact</a></li>
+      </ul>
+    </nav>
+    <div class="tb-right">
+      <div class="tb-search" data-search-widget>
+        <span class="glyph">grep</span>
+        <input type="text" id="topSearch" placeholder="search site…" autocomplete="off">
+        <div class="tb-search-panel" id="topSearchPanel">
+          <div class="tb-search-count" id="topSearchCount"></div>
+          <div class="ss-results" id="topSearchResults"></div>
+          <div class="no-results" id="topSearchNoResults">Nothing matches that search.</div>
+        </div>
+      </div>
+      <div class="tb-uptime"><span class="dot"></span><span class="uptime-target">session uptime — 00:00:00</span></div>
+      <button class="tb-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-icon"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+  <div class="tb-overlay" id="tbOverlay">
+    <nav class="tb-overlay-nav" aria-label="Primary, expanded">
+      <ul>
+        <li><a href="index.html" data-page="home"><span class="op">~</span> home</a></li>
+        <li><a href="writeups.html" data-page="writeups"><span class="op">cd</span> writeups</a></li>
+        <li><a href="research.html" data-page="research"><span class="op">cd</span> research</a></li>
+        <li><a href="notes.html" data-page="notes"><span class="op">cd</span> notes</a></li>
+        <li><a href="projects.html" data-page="projects"><span class="op">cd</span> projects</a></li>
+        <li><a href="about.html" data-page="about"><span class="op">cd</span> about</a></li>
+        <li><a href="contact.html" data-page="contact"><span class="op">cd</span> contact</a></li>
+      </ul>
+    </nav>
+    <div class="tb-search" data-search-widget>
+        <span class="glyph">grep</span>
+        <input type="text" id="topSearchOverlay" placeholder="search site…" autocomplete="off">
+        <div class="tb-search-panel" id="topSearchOverlayPanel">
+          <div class="tb-search-count" id="topSearchOverlayCount"></div>
+          <div class="ss-results" id="topSearchOverlayResults"></div>
+          <div class="no-results" id="topSearchOverlayNoResults">Nothing matches that search.</div>
+        </div>
+      </div>
+    <div class="tb-overlay-socials">
+      <a href="xmpp.html"><span class="glyph">xmpp</span> 0x@cigar.sh</a>
+    </div>
+    <div class="tb-overlay-uptime"><span class="dot"></span><span class="uptime-target">session uptime — 00:00:00</span></div>
+  </div>
+</header>
+
+<main class="main">
+<section id="article">
+  <a class="back-link" href="notes.html">← notes</a>
+
+  <div class="template-note">
+    <strong>This is a template.</strong> Duplicate this file, rename it (e.g. <code>note-ccna-nat.html</code>), replace everything below, then add a matching entry to <code>notes.html</code> and to <code>assets/search-data.js</code>.
+  </div>
+
+  <div class="embed-example">
+        Drop an image or video into the article body with these snippets — no extra CSS or JS needed per use:
+        <pre><code>&lt;!-- image --&gt;
+&lt;figure&gt;
+  &lt;img src="path/to/image.jpg" alt="Describe what the image shows" loading="lazy"&gt;
+  &lt;figcaption&gt;Optional caption text&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;!-- youtube (privacy-enhanced, responsive 16:9) --&gt;
+&lt;div class="video-embed"&gt;
+  &lt;iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID"
+    title="Descriptive video title" loading="lazy"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+      </div>
+
+  <div class="article-header">
+    <h1 class="article-title">Note title goes here</h1>
+    <div class="article-meta">
+      <span>CCNA / Security+ / CPTS</span>
+      <div class="article-tags"><span>TAG</span><span>TAG</span></div>
+    </div>
+    <p class="article-dek">One sentence on what this note covers and why it was worth writing down.</p>
+  </div>
+
+  <div class="article-body">
+    <p>Context: what topic or exam objective this covers.</p>
+
+    <h3>The core idea</h3>
+    <p>Explain it the way you'd want to find it explained again in six months.</p>
+
+    <pre><code>example command or worked calculation
+</code></pre>
+
+    <h3>Common trip-up</h3>
+    <p>Whatever detail is easy to get wrong or forget under exam pressure.</p>
+  </div>
+
+  <div class="article-footer">
+    <span>filed under: tag, tag</span>
+    <a href="notes.html">back to all notes →</a>
+  </div>
+</section>
+</main>
+
+<script src="assets/search-data.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>

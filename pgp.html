@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PGP key — cigar.sh</title>
+<meta name="description" content="Public PGP key and fingerprint for encrypted contact with 0xCigar.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cigar.sh/pgp.html">
+<meta property="og:title" content="PGP key — cigar.sh">
+<meta property="og:description" content="Public PGP key and fingerprint for encrypted contact with 0xCigar.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cigar.sh/pgp.html">
+<meta property="og:image" content="https://cigar.sh/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PGP key — cigar.sh">
+<meta name="twitter:description" content="Public PGP key and fingerprint for encrypted contact with 0xCigar.">
+<meta name="twitter:image" content="https://cigar.sh/assets/og-image.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .pgp-wrap{max-width:720px;}
+  .pgp-fingerprint{
+    font-size:13px; color:var(--ink-dim); margin-bottom:28px;
+    letter-spacing:0.03em; word-break:break-all;
+  }
+  .pgp-block{
+    background:var(--bg-panel); border:1px solid var(--line);
+    padding:26px 28px; font-size:12.5px; line-height:1.7;
+    white-space:pre-wrap; word-break:break-all; color:var(--ink-dim);
+    max-height:70vh; overflow-y:auto;
+  }
+  .pgp-copy{
+    display:inline-block; margin-top:18px;
+    font-size:12.5px; color:var(--ink-dim); border:1px solid var(--line);
+    padding:9px 16px; background:none; font-family:var(--mono); cursor:pointer;
+  }
+  .pgp-copy:hover{color:var(--ink); border-color:var(--ink-dim);}
+  .pgp-copy.success{color:var(--accent-green); border-color:var(--accent-green);}
+  .pgp-copy.failure{color:var(--accent-red); border-color:var(--accent-red);}
+</style>
+</head>
+<body data-page="contact">
+
+<div class="grain"></div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-row">
+    <a href="index.html" class="tb-mark">cigar<span class="dim">.sh</span></a>
+    <nav class="tb-nav" id="tbNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" data-page="home"><span class="op">~</span> home</a></li>
+        <li><a href="writeups.html" data-page="writeups"><span class="op">cd</span> writeups</a></li>
+        <li><a href="research.html" data-page="research"><span class="op">cd</span> research</a></li>
+        <li><a href="notes.html" data-page="notes"><span class="op">cd</span> notes</a></li>
+        <li><a href="projects.html" data-page="projects"><span class="op">cd</span> projects</a></li>
+        <li><a href="about.html" data-page="about"><span class="op">cd</span> about</a></li>
+        <li><a href="contact.html" data-page="contact"><span class="op">cd</span> contact</a></li>
+      </ul>
+    </nav>
+    <div class="tb-right">
+      <div class="tb-search" data-search-widget>
+        <span class="glyph">grep</span>
+        <input type="text" id="topSearch" placeholder="search site…" autocomplete="off">
+        <div class="tb-search-panel" id="topSearchPanel">
+          <div class="tb-search-count" id="topSearchCount"></div>
+          <div class="ss-results" id="topSearchResults"></div>
+          <div class="no-results" id="topSearchNoResults">Nothing matches that search.</div>
+        </div>
+      </div>
+      <div class="tb-uptime"><span class="dot"></span><span class="uptime-target">session uptime — 00:00:00</span></div>
+      <button class="tb-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-icon"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+  <div class="tb-overlay" id="tbOverlay">
+    <nav class="tb-overlay-nav" aria-label="Primary, expanded">
+      <ul>
+        <li><a href="index.html" data-page="home"><span class="op">~</span> home</a></li>
+        <li><a href="writeups.html" data-page="writeups"><span class="op">cd</span> writeups</a></li>
+        <li><a href="research.html" data-page="research"><span class="op">cd</span> research</a></li>
+        <li><a href="notes.html" data-page="notes"><span class="op">cd</span> notes</a></li>
+        <li><a href="projects.html" data-page="projects"><span class="op">cd</span> projects</a></li>
+        <li><a href="about.html" data-page="about"><span class="op">cd</span> about</a></li>
+        <li><a href="contact.html" data-page="contact"><span class="op">cd</span> contact</a></li>
+      </ul>
+    </nav>
+    <div class="tb-search" data-search-widget>
+        <span class="glyph">grep</span>
+        <input type="text" id="topSearchOverlay" placeholder="search site…" autocomplete="off">
+        <div class="tb-search-panel" id="topSearchOverlayPanel">
+          <div class="tb-search-count" id="topSearchOverlayCount"></div>
+          <div class="ss-results" id="topSearchOverlayResults"></div>
+          <div class="no-results" id="topSearchOverlayNoResults">Nothing matches that search.</div>
+        </div>
+      </div>
+    <div class="tb-overlay-socials">
+      <a href="xmpp.html"><span class="glyph">xmpp</span> 0x@cigar.sh</a>
+    </div>
+    <div class="tb-overlay-uptime"><span class="dot"></span><span class="uptime-target">session uptime — 00:00:00</span></div>
+  </div>
+</header>
+
+<main class="main">
+<section id="pgp" class="pgp-wrap">
+  <a class="back-link" href="contact.html">← contact</a>
+
+  <div class="template-note">
+    <strong>Fingerprint</strong> 0472 7A9C 8623 5DA3 D67C  3FED 26B7 E641 13EB F5B6
+  </div>
+
+  <!-- <div class="pgp-fingerprint">4A3F 9B2C 1D6E 8F02  55A7 3C4B 9E01 D2F8  7B3A 6C90</div> -->
+
+  <pre class="pgp-block" id="pgpKey">-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEarLcWBYJKwYBBAHaRw8BAQdAiylqybqx8EK8L+h2OOtFtsgMkFQDWTbLUhv7
+ZyGRD0i0FTB4Q2lnYXIgPGhpQGNpZ2FyLnNoPoiWBBMWCgA+FiEEBHJ6nIYjXaPW
+fD/tJrfmQRPr9bYFAmqy3FgCGwMFCQWlgZAFCwkIBwIGFQoJCAsCBBYCAwECHgEC
+F4AACgkQJrfmQRPr9bYxowD/dARUQB/M3eQUWWT1t51+aWm3U0R1X3o1yV+ZUA/e
+aqoA/RMZpwy4txgqJuUBVeIyLFB3uVl/owpx+qWtm59jtlEEuDgEarLcWBIKKwYB
+BAGXVQEFAQEHQB3d0rFEM83PqSqzMjABccsgXuJ3Aoq/IBppO+mZTwdlAwEIB4h+
+BBgWCgAmFiEEBHJ6nIYjXaPWfD/tJrfmQRPr9bYFAmqy3FgCGwwFCQWlgZAACgkQ
+JrfmQRPr9bbdzwD/Ygam0SniDxsO8+6aUOY0WXeSBu5F4N2Nebp7Ggw9OCoA/0Fw
+g2KkP4z/zUL+6M1OBEHhvoMBcMbuMB0nGL0mlDwM
+=4Djb
+-----END PGP PUBLIC KEY BLOCK-----</pre>
+
+  <button class="pgp-copy" id="copyBtn">copy to clipboard</button>
+</section>
+</main>
+
+<script src="assets/search-data.js"></script>
+<script src="assets/script.js"></script>
+<script>
+  const copyBtn = document.getElementById('copyBtn');
+  const pgpKey = document.getElementById('pgpKey');
+  if(copyBtn && pgpKey){
+    copyBtn.addEventListener('click', async ()=>{
+      try{
+        await navigator.clipboard.writeText(pgpKey.textContent.trim());
+        copyBtn.textContent = 'copied';
+        copyBtn.classList.remove('failure'); copyBtn.classList.add('success');
+        setTimeout(()=>{ copyBtn.textContent = 'copy to clipboard'; copyBtn.classList.remove('success'); }, 1600);
+      }catch(e){
+        copyBtn.textContent = 'copy failed — select the text manually';
+        copyBtn.classList.remove('success'); copyBtn.classList.add('failure');
+        setTimeout(()=>{ copyBtn.textContent = 'copy to clipboard'; copyBtn.classList.remove('failure'); }, 2400);
+      }
+    });
+  }
+</script>
+</body>
+</html>

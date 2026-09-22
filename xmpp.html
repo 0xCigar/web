@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XMPP — cigar.sh</title>
+<meta name="description" content="Self-hosted XMPP server details, client recommendations, and OMEMO fingerprint verification for 0xCigar.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cigar.sh/xmpp.html">
+<meta property="og:title" content="XMPP — cigar.sh">
+<meta property="og:description" content="Self-hosted XMPP server details, client recommendations, and OMEMO fingerprint verification for 0xCigar.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cigar.sh/xmpp.html">
+<meta property="og:image" content="https://cigar.sh/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="XMPP — cigar.sh">
+<meta name="twitter:description" content="Self-hosted XMPP server details, client recommendations, and OMEMO fingerprint verification for 0xCigar.">
+<meta name="twitter:image" content="https://cigar.sh/assets/og-image.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body data-page="contact">
+
+<div class="grain"></div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-row">
+    <a href="index.html" class="tb-mark">cigar<span class="dim">.sh</span></a>
+    <nav class="tb-nav" id="tbNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" data-page="home"><span class="op">~</span> home</a></li>
+        <li><a href="writeups.html" data-page="writeups"><span class="op">cd</span> writeups</a></li>
+        <li><a href="research.html" data-page="research"><span class="op">cd</span> research</a></li>
+        <li><a href="notes.html" data-page="notes"><span class="op">cd</span> notes</a></li>
+        <li><a href="projects.html" data-page="projects"><span class="op">cd</span> projects</a></li>
+        <li><a href="about.html" data-page="about"><span class="op">cd</span> about</a></li>
+        <li><a href="contact.html" data-page="contact"><span class="op">cd</span> contact</a></li>
+      </ul>
+    </nav>
+    <div class="tb-right">
+      <div class="tb-search" data-search-widget>
+        <span class="glyph">grep</span>
+        <input type="text" id="topSearch" placeholder="search site…" autocomplete="off">
+        <div class="tb-search-panel" id="topSearchPanel">
+          <div class="tb-search-count" id="topSearchCount"></div>
+          <div class="ss-results" id="topSearchResults"></div>
+          <div class="no-results" id="topSearchNoResults">Nothing matches that search.</div>
+        </div>
+      </div>
+      <div class="tb-uptime"><span class="dot"></span><span class="uptime-target">session uptime — 00:00:00</span></div>
+      <button class="tb-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-icon"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+  <div class="tb-overlay" id="tbOverlay">
+    <nav class="tb-overlay-nav" aria-label="Primary, expanded">
+      <ul>
+        <li><a href="index.html" data-page="home"><span class="op">~</span> home</a></li>
+        <li><a href="writeups.html" data-page="writeups"><span class="op">cd</span> writeups</a></li>
+        <li><a href="research.html" data-page="research"><span class="op">cd</span> research</a></li>
+        <li><a href="notes.html" data-page="notes"><span class="op">cd</span> notes</a></li>
+        <li><a href="projects.html" data-page="projects"><span class="op">cd</span> projects</a></li>
+        <li><a href="about.html" data-page="about"><span class="op">cd</span> about</a></li>
+        <li><a href="contact.html" data-page="contact"><span class="op">cd</span> contact</a></li>
+      </ul>
+    </nav>
+    <div class="tb-search" data-search-widget>
+        <span class="glyph">grep</span>
+        <input type="text" id="topSearchOverlay" placeholder="search site…" autocomplete="off">
+        <div class="tb-search-panel" id="topSearchOverlayPanel">
+          <div class="tb-search-count" id="topSearchOverlayCount"></div>
+          <div class="ss-results" id="topSearchOverlayResults"></div>
+          <div class="no-results" id="topSearchOverlayNoResults">Nothing matches that search.</div>
+        </div>
+      </div>
+    <div class="tb-overlay-socials">
+      <a href="xmpp.html"><span class="glyph">xmpp</span> 0x@cigar.sh</a>
+    </div>
+    <div class="tb-overlay-uptime"><span class="dot"></span><span class="uptime-target">session uptime — 00:00:00</span></div>
+  </div>
+</header>
+
+<main class="main">
+<section id="article">
+  <a class="back-link" href="contact.html">← contact</a>
+
+  <div class="template-note">
+    <strong>Fingerprint:</strong> 000000 000000 000000 000000 000000 000000
+  </div>
+
+  <div class="article-header">
+    <h1 class="article-title">XMPP</h1>
+    <div class="article-meta">
+      <span>self-hosted</span>
+      <span>TLS required</span>
+    </div>
+    <p class="article-dek">I run my own XMPP (Jabber) server. If you'd rather talk somewhere federated and self-hosted than over a proprietary platform, this is the way to reach me directly.</p>
+  </div>
+
+  <div class="article-body">
+    <h3>My address</h3>
+    <pre><code>0x@cigar.sh</code></pre>
+    <p>Add this as a contact from any XMPP client, on any server — XMPP is federated, so you don't need an account on <strong>cigar.sh</strong> to message me.</p>
+
+    <h3>Server details</h3>
+    <ul>
+      <li><strong>Domain:</strong> cigar.sh</li>
+      <li><strong>Client-to-server port:</strong> 5222 (STARTTLS) / 5223 (direct TLS)</li>
+      <li><strong>Registration:</strong> in-band registration is disabled — accounts on this server are invite-only. If you specifically want an <code>@cigar.sh</code> address rather than just adding me as a contact, email or reach out first.</li>
+      <li><strong>Encryption:</strong> OMEMO is supported and preferred for anything sensitive.</li>
+    </ul>
+
+    <h3>Getting started</h3>
+    <p>If you don't already have an XMPP account, any of these clients will get you talking within a few minutes:</p>
+    <ul>
+      <li><strong>Conversations</strong> (Android) — the most straightforward option, supports OMEMO out of the box.</li>
+      <li><strong>Dino</strong> (Linux/desktop) — clean, minimal, OMEMO supported.</li>
+      <li><strong>Gajim</strong> (Windows/Linux/macOS) — more configurable, plugin support.</li>
+      <li><strong>Monal</strong> (iOS/macOS) — solid option on Apple platforms.</li>
+    </ul>
+    <p>Pick a public server to register on (or your own), then add <code>0x@cigar.sh</code> as a contact and send a subscription request. I'll accept it and we're good to go.</p>
+
+    <h3>Verifying it's really me</h3>
+    <p>For anything sensitive, verify my OMEMO fingerprint out of band before trusting the session — over a call, in person, or against the fingerprint listed on my PGP-signed key page.</p>
+    <pre><code>OMEMO fingerprint:
+0000 0000 0000 0000 0000 0000 0000 0000
+0000 0000 0000 0000 0000 0000 0000 0000</code></pre>
+  </div>
+
+  <div class="article-footer">
+    <span>federated · self-hosted</span>
+    <a href="pgp.html">also see my PGP key →</a>
+  </div>
+</section>
+</main>
+
+<script src="assets/search-data.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>

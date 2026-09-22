@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>cigar.sh — offensive &amp; defensive security notes</title>
+<meta name="description" content="Red team and blue team writeups, security research, study notes, and open source projects from 0xCigar.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://cigar.sh/">
+<meta property="og:title" content="cigar.sh — offensive &amp; defensive security notes">
+<meta property="og:description" content="Red team and blue team writeups, security research, study notes, and open source projects from 0xCigar.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://cigar.sh/">
+<meta property="og:image" content="https://cigar.sh/assets/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="cigar.sh — offensive &amp; defensive security notes">
+<meta name="twitter:description" content="Red team and blue team writeups, security research, study notes, and open source projects from 0xCigar.">
+<meta name="twitter:image" content="https://cigar.sh/assets/og-image.png">
+<link rel="icon" href="assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Person", "name": "0xCigar", "url": "https://cigar.sh/", "sameAs": ["https://github.com/0xCigar", "https://ayushwahane.com"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "cigar.sh", "url": "https://cigar.sh/", "potentialAction": {"@type": "SearchAction", "target": "https://cigar.sh/index.html?q={search_term_string}", "query-input": "required name=search_term_string"}}</script>
+</head>
+<body data-page="home">
+
+<div class="grain"></div>
+
+<header class="topbar" id="topbar">
+  <div class="topbar-row">
+    <a href="index.html" class="tb-mark">cigar<span class="dim">.sh</span></a>
+    <nav class="tb-nav" id="tbNav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html" data-page="home"><span class="op">~</span> home</a></li>
+        <li><a href="writeups.html" data-page="writeups"><span class="op">cd</span> writeups</a></li>
+        <li><a href="research.html" data-page="research"><span class="op">cd</span> research</a></li>
+        <li><a href="notes.html" data-page="notes"><span class="op">cd</span> notes</a></li>
+        <li><a href="projects.html" data-page="projects"><span class="op">cd</span> projects</a></li>
+        <li><a href="about.html" data-page="about"><span class="op">cd</span> about</a></li>
+        <li><a href="contact.html" data-page="contact"><span class="op">cd</span> contact</a></li>
+      </ul>
+    </nav>
+    <div class="tb-right">
+      <div class="tb-search" data-search-widget>
+        <span class="glyph">grep</span>
+        <input type="text" id="topSearch" placeholder="search site…" autocomplete="off">
+        <div class="tb-search-panel" id="topSearchPanel">
+          <div class="tb-search-count" id="topSearchCount"></div>
+          <div class="ss-results" id="topSearchResults"></div>
+          <div class="no-results" id="topSearchNoResults">Nothing matches that search.</div>
+        </div>
+      </div>
+      <div class="tb-uptime"><span class="dot"></span><span class="uptime-target">session uptime — 00:00:00</span></div>
+      <button class="tb-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger-icon"><span></span><span></span><span></span></span>
+      </button>
+    </div>
+  </div>
+  <div class="tb-overlay" id="tbOverlay">
+    <nav class="tb-overlay-nav" aria-label="Primary, expanded">
+      <ul>
+        <li><a href="index.html" data-page="home"><span class="op">~</span> home</a></li>
+        <li><a href="writeups.html" data-page="writeups"><span class="op">cd</span> writeups</a></li>
+        <li><a href="research.html" data-page="research"><span class="op">cd</span> research</a></li>
+        <li><a href="notes.html" data-page="notes"><span class="op">cd</span> notes</a></li>
+        <li><a href="projects.html" data-page="projects"><span class="op">cd</span> projects</a></li>
+        <li><a href="about.html" data-page="about"><span class="op">cd</span> about</a></li>
+        <li><a href="contact.html" data-page="contact"><span class="op">cd</span> contact</a></li>
+      </ul>
+    </nav>
+    <div class="tb-search" data-search-widget>
+        <span class="glyph">grep</span>
+        <input type="text" id="topSearchOverlay" placeholder="search site…" autocomplete="off">
+        <div class="tb-search-panel" id="topSearchOverlayPanel">
+          <div class="tb-search-count" id="topSearchOverlayCount"></div>
+          <div class="ss-results" id="topSearchOverlayResults"></div>
+          <div class="no-results" id="topSearchOverlayNoResults">Nothing matches that search.</div>
+        </div>
+      </div>
+    <div class="tb-overlay-socials">
+      <a href="xmpp.html"><span class="glyph">xmpp</span> 0x@cigar.sh</a>
+    </div>
+    <div class="tb-overlay-uptime"><span class="dot"></span><span class="uptime-target">session uptime — 00:00:00</span></div>
+  </div>
+</header>
+
+<main class="main">
+<section class="hero" id="hero">
+  <canvas id="smoke-canvas"></canvas>
+  <div class="hero-inner">
+    <div class="hero-kicker"><span class="dot"></span> offense &amp; defense, written down</div>
+    <h1>
+      <span>cigar.sh</span>
+      <span class="thin">notes from both sides of the wire</span>
+    </h1>
+    <div class="hero-type"><span id="typeTarget"></span><span class="cursor"></span></div>
+  </div>
+  <div class="hero-scroll"><span class="line"></span> scroll</div>
+</section>
+
+<section id="index">
+  <div class="eyebrow">ls ~/</div>
+  <h2 class="section-title">Where to go</h2>
+  <p class="section-lede">Each of these is its own page — scroll freely, or use the search above to jump straight to something.</p>
+
+  <div class="preview-grid">
+    <a class="preview-card" href="writeups.html">
+      <div class="preview-kicker">cat ~/writeups/*.md</div>
+      <div class="preview-title">Writeups</div>
+      <div class="preview-desc">Red team and blue team engagement notes, CTF solves, and detection breakdowns.</div>
+      <div class="preview-go">open →</div>
+    </a>
+    <a class="preview-card" href="research.html">
+      <div class="preview-kicker">git log ~/research</div>
+      <div class="preview-title">Research &amp; open source</div>
+      <div class="preview-desc">Disclosures, published research, and contributions to tools I rely on.</div>
+      <div class="preview-go">open →</div>
+    </a>
+    <a class="preview-card" href="notes.html">
+      <div class="preview-kicker">cat ~/notes/*.md</div>
+      <div class="preview-title">Notes</div>
+      <div class="preview-desc">Study notes for CCNA, Security+, CPTS, and whatever cert comes next.</div>
+      <div class="preview-go">open →</div>
+    </a>
+    <a class="preview-card" href="projects.html">
+      <div class="preview-kicker">ls -la ~/projects</div>
+      <div class="preview-title">Projects</div>
+      <div class="preview-desc">Tools built out of necessity during engagements and research.</div>
+      <div class="preview-go">open →</div>
+    </a>
+    <a class="preview-card" href="about.html">
+      <div class="preview-kicker">whoami</div>
+      <div class="preview-title">About</div>
+      <div class="preview-desc">Who's behind 0xCigar, and how this site connects to my formal profile.</div>
+      <div class="preview-go">open →</div>
+    </a>
+    <a class="preview-card" href="contact.html">
+      <div class="preview-kicker">mail -s "hello" hi@cigar.sh</div>
+      <div class="preview-title">Contact</div>
+      <div class="preview-desc">Email, GitHub, XMPP, and a PGP key if you need to reach me privately.</div>
+      <div class="preview-go">open →</div>
+    </a>
+  </div>
+</section>
+</main>
+
+<script src="assets/search-data.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>

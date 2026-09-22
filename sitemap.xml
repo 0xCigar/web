@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  How to add a new URL:
+  1. Publish the new page (e.g. writeup-your-new-slug.html) under the site root.
+  2. Copy one <url> block below, set <loc> to the new page's full URL, and set
+     <lastmod> to the date you published it (YYYY-MM-DD).
+  3. Leave *-template.html files out of this file — they're noindex and not
+     meant to be crawled.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://cigar.sh/index.html</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cigar.sh/writeups.html</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cigar.sh/research.html</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cigar.sh/notes.html</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cigar.sh/projects.html</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cigar.sh/about.html</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cigar.sh/contact.html</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cigar.sh/pgp.html</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+  <url>
+    <loc>https://cigar.sh/xmpp.html</loc>
+    <lastmod>2026-09-16</lastmod>
+  </url>
+</urlset>
